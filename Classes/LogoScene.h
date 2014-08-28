@@ -17,6 +17,9 @@ public:
 	virtual bool init();
 	static Scene* createScene();
 	CREATE_FUNC(LogoScene);
+
+private:
+	void startButtonCallBack(Ref* pSender);
 };
 
 #endif
