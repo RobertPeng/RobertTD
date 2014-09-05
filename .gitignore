@@ -35,10 +35,11 @@ Icon
 .Spotlight-V100
 .Trashes
 
-.sdf
-.opensdf
-.suo
-.vcxproj.filters
-.vcxproj.user
+*.sdf
+*.opensdf
+*.suo
+*.vcxproj.filters
+*.vcxproj.user
 
-
+cocos2d/
+Debug.win32/
