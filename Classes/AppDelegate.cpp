@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "LoadingResScene.h"
+#include "RPlatform.h"
+#include "RWinTypes.h"
 
 USING_NS_CC;
 

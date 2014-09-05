@@ -9,6 +9,8 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
+#define LAYER_NUMBER (3)
+
 class LevelScene : public Scene
 {
 public:
