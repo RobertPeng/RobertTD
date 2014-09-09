@@ -19,6 +19,7 @@ public:
 	CREATE_FUNC(LevelScene);
 	static LevelScene* getInstance();
 	virtual bool init();
+	void menuCloseCallback(Ref* pSender);
 
 private:
 	static LevelScene* instance;

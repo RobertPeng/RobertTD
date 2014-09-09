@@ -18,8 +18,20 @@ public:
 	CREATE_FUNC(LevelLayer);
 
 	bool onTouchBegan(Touch* touch, Event* event);
-	void onTouchMoved(Touch* tcuch, Event* event);
-	void onTouchEnded(Touch* tcuch, Event* event);
+	void onTouchMoved(Touch* touch, Event* event);
+	void onTouchEnded(Touch* touch, Event* event);
+	void addNode(Node *level);
+private:
+	void goToCurrNode();
+
+private:
+	int pageNode;
+	int curPageNode;
+	Point touchDownPoint;
+	Point touchUpPoint;
+	Point touchCurPoint;
+	float WINDOW_WIDTH;
+	float WINDOW_HEIGHT;
 };
 
 #endif
