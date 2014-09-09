@@ -4,6 +4,10 @@
 	Robert	2014/08/27
 **************************************************/
 #include "LogoScene.h"
+#include "SimpleAudioEngine.h"
+#include "LevelScene.h"
+
+using namespace CocosDenshion;
 
 LogoScene::LogoScene()
 {
@@ -58,5 +62,7 @@ Scene* LogoScene::createScene()
 
 void LogoScene::startButtonCallBack(Ref* pSender)
 {
-	CCLOG("hahaha!");
+//	CCLOG("hahaha!");
+	SimpleAudioEngine::getInstance()->playEffect(FileUtils::getInstance()->fullPathForFilename("sound/button.wav").c_str(), false);
+	Director::getInstance()->replaceScene(CCTransitionFade::create(0.5f, LevelScene::create()));
 }
