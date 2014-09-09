@@ -4,6 +4,7 @@
 	Robert	2014/08/29
 **************************************************/
 #include "LevelLayer.h"
+#include "LevelScene.h"
 
 #define SHORTEST_SLIDE_LENGTH (0)
 
@@ -44,7 +45,26 @@ void LevelLayer::onTouchEnded(Touch* touch, Event* event)
 	auto width = sprite1->getContentSize().width;
 	if (dis >= SHORTEST_SLIDE_LENGTH)
 	{
-		//int offset = 
+		int offset = getPositionX() - curPageNode * (-WINDOW_WIDTH);
+		if (offset > width)
+		{
+			if (curPageNode > 0)
+			{
+				--curPageNode;
+				Sprite* sprite = (Sprite*)LevelScene::getInstance()->getChildByTag(888);
+				sprite->setPosition(Vec2(sprite->getPositionX() - width, sprite->getPositionY()));
+			}
+		}
+		else if (offset < -width)
+		{
+			if (curPageNode < (pageNode - 1))
+			{
+				++curPageNode;
+				Sprite* sprite = (Sprite*)LevelScene::getInstance()->getChildByTag(888);
+				sprite->setPosition(Vec2(sprite->getPositionX() + width, sprite->getPositionY()));
+			}
+		}
+		goToCurrNode();
 	}
 }
 
