@@ -22,4 +22,5 @@ bool LevelInfoScene::init()
 		return false;
 	}
 
+	return true;
 }
