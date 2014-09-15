@@ -17,7 +17,11 @@ public:
 	virtual bool init() override;
 	CREATE_FUNC(EnemyBase);
 	Animation* createAnimation(std::string prefixName, int framesNum, float delay);
+	void createAndSetHpBar();
 
+private:
+	Sprite* sprite;
+	Sprite* hpBgSprite;
 };
 
 #endif
