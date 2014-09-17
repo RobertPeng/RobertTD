@@ -37,6 +37,8 @@ protected:
 	CC_SYNTHESIZE(bool, enemySuccessful, EnemySuccessful);
 	CC_SYNTHESIZE(float, runSpeed, RunSpeed);
 	CC_SYNTHESIZE(float, value, Value);
+	CC_SYNTHESIZE(float, maxHp, MaxHp);
+	CC_SYNTHESIZE(float, currHp, CurrHp);
 
 private:
 	Vector<Node*> pointsVector;

@@ -18,6 +18,8 @@ EnemyBase::EnemyBase()
 	enemySuccessful = false;
 	runSpeed = 0;
 	value = 0;
+	maxHp = 0;
+	currHp = 0;
 }
 
 EnemyBase::~EnemyBase()

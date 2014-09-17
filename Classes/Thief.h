@@ -19,6 +19,31 @@ public:
 	static Thief* createThief(Vector<Node*> points, int hp);
 	virtual void changeDirection(float dt);
 	virtual void enemyExpload();
+
+	//Test
+	void TestRunAction(float dt);
+};
+
+class Pirate : public EnemyBase
+{
+public:
+	Pirate();
+	virtual ~Pirate();
+	virtual bool init() override;
+	static Pirate* createPirate(Vector<Node*> points, int hp);
+	virtual void changeDirection(float dt);
+	virtual void enemyExpload();
+};
+
+class Bandit : public EnemyBase
+{
+public:
+	Bandit();
+	virtual ~Bandit();
+	virtual bool init() override;
+	static Bandit* createBandit(Vector<Node*> points, int hp);
+	virtual void changeDirection(float dt);
+	virtual void enemyExpload();
 };
 
 #endif

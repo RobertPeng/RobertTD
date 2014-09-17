@@ -6,6 +6,7 @@
 
 *******************************/
 #include "LevelInfoScene.h"
+#include "Thief.h"
 
 LevelInfoScene::LevelInfoScene()
 {
@@ -21,6 +22,14 @@ bool LevelInfoScene::init()
 	{
 		return false;
 	}
+
+	//Test
+	Size size = Director::getInstance()->getWinSize();
+	Vector<Node*> vec;
+	Thief* pThief = Thief::createThief(vec, 100);
+	addChild(pThief);
+	pThief->setPosition(size.width / 2, size.height / 2);
+	//pThief->runAction(Animate::create(AnimationCache::getInstance()->getAnimation("runright1")));
 
 	return true;
 }
