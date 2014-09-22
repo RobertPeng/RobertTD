@@ -20,6 +20,7 @@ public:
 	static GameManager* getInstance();
 
 	Vector<EnemyBase*> enemyVector;
+	Vector<Sprite*> bulletVector;
 private:
 	static GameManager* instance;
 };
