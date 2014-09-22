@@ -14,7 +14,7 @@ USING_NS_CC;
 class EnemyBase : public Sprite
 {
 public:
-	EnemyBase();
+	EnemyBase();	
 	virtual ~EnemyBase();
 	CREATE_FUNC(EnemyBase);
 	virtual bool init();
@@ -32,8 +32,6 @@ protected:
 	Animation *animationRight;
 	Animation *animationLeft;
 	Animation *animationExplode;
-	Sprite* sprite;
-	Sprite* hpBgSprite;
 	CC_SYNTHESIZE(float, runSpeed, RunSpeed);
 	CC_SYNTHESIZE(float, maxHp, MaxHp);
 	CC_SYNTHESIZE(float, vaule, Vaule);
@@ -41,6 +39,8 @@ protected:
 	CC_SYNTHESIZE(float, hpPercentage, HpPercentage);
 	CC_SYNTHESIZE_READONLY(ProgressTimer*, hpBar, HpBar);
 	CC_SYNTHESIZE(bool, enemySuccessful, EnemySuccessful);
+	CC_SYNTHESIZE_READONLY(Sprite*, sprite, Sprite);
+	CC_SYNTHESIZE_READONLY(Sprite*, hpBgSprite, HpBgSprite);
 
 private:
 	Vector<Node*> pointsVector;

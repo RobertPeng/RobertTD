@@ -9,6 +9,7 @@
 #define __TOWERBASE_H_
 
 #include "cocos2d.h"
+#include "EnemyBase.h"
 USING_NS_CC;
 
 class TowerBase : public Sprite
@@ -25,7 +26,7 @@ public:
 	CC_SYNTHESIZE(float, rate, Rate);  //
 
 protected:
-//	EnemyBase* nearestEnemy;    // 塔子视野内最近的敌人
+	EnemyBase* nearestEnemy;    // 塔子视野内最近的敌人
 };
 
 #endif
