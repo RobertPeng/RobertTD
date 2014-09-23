@@ -1,28 +1,29 @@
 /*******************************
-	AttackTower.h
+	MultiDirTower.h
 
-	Robert		2014/09/22
+	Robert		2014/09/23
 
 
 *******************************/
-#ifndef __ATTACKTOWER_H_
-#define __ATTACKTOWER_H_
+#ifndef __MULTIDIRTOWER_H_
+#define __MULTIDIRTOWER_H_
 
 #include "cocos2d.h"
 #include "TowerBase.h"
 USING_NS_CC;
 
-class AttackTower : public TowerBase
+class MultiDirTower : public TowerBase
 {
 public:
-	AttackTower();
-	virtual ~AttackTower();
+	MultiDirTower();
+	virtual ~MultiDirTower();
 
 	virtual bool init();
-	CREATE_FUNC(AttackTower);
+	CREATE_FUNC(MultiDirTower);
 	void shoot(float dt);
 	//void removeBullet(Node* pSender);
 	virtual Sprite* createBullet(std::string bulletTexName);
+	void createBullet6(float dt);
 
 private:
 	Sprite* tower;

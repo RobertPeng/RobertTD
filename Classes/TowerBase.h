@@ -20,6 +20,8 @@ public:
 	virtual bool init();
 	CREATE_FUNC(TowerBase);
 	void checkNearestEnemy();
+	virtual void removeBullet(Node* pSender);
+	virtual Sprite* createBullet(std::string bulletTexName);
 	CC_SYNTHESIZE(int, scope, Scope);			//塔的视线范围
 	CC_SYNTHESIZE(int, lethality, Lethality);	//杀伤力
 	CC_SYNTHESIZE(int, towerValue, TowerValue);  //

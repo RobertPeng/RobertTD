@@ -19,7 +19,7 @@ AttackTower::~AttackTower()
 
 bool AttackTower::init()
 {
-	if (!Sprite::init())
+	if (!TowerBase::init())
 	{
 		return false;
 	}
@@ -42,7 +42,7 @@ void AttackTower::shoot(float dt)
 	checkNearestEnemy();
 	if (nearestEnemy != NULL && nearestEnemy->getCurrHp() > 0)
 	{
-		auto currBullet = AttackTowerBullet();
+		auto currBullet = createBullet("bullet1.png");
 		instance->bulletVector.pushBack(currBullet);
 		auto moveDuration = getRate();
 		Point shootVector = nearestEnemy->getSprite()->getPosition() - getPosition();
@@ -58,18 +58,25 @@ void AttackTower::shoot(float dt)
 	}
 }
 
-void AttackTower::removeBullet(Node* pSender)
-{
-	GameManager *instance = GameManager::getInstance();   
-	Sprite *sprite = (Sprite *)pSender;
-	instance->bulletVector.eraseObject(sprite);
-	sprite->removeFromParent();
-}
+// void AttackTower::removeBullet(Node* pSender)
+// {
+// 	GameManager *instance = GameManager::getInstance();   
+// 	Sprite *sprite = (Sprite *)pSender;
+// 	instance->bulletVector.eraseObject(sprite);
+// 	sprite->removeFromParent();
+// }
 
-Sprite* AttackTower::AttackTowerBullet()
+// Sprite* AttackTower::AttackTowerBullet()
+// {
+// 	Sprite* bullet = Sprite::createWithSpriteFrameName("bullet1.png");
+// 	bullet->setPosition(0, tower->getContentSize().height / 4);
+// 	addChild(bullet);
+// 	return bullet;
+// }
+
+Sprite* AttackTower::createBullet(std::string bulletTexName)
 {
-	Sprite* bullet = Sprite::createWithSpriteFrameName("bullet1.png");
+	Sprite* bullet = TowerBase::createBullet(bulletTexName);
 	bullet->setPosition(0, tower->getContentSize().height / 4);
-	addChild(bullet);
 	return bullet;
 }

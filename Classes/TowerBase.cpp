@@ -47,3 +47,20 @@ void TowerBase::checkNearestEnemy()
 	}
 	nearestEnemy = enemyTemp;
 }
+
+void TowerBase::removeBullet(Node* pSender)
+{
+	GameManager *instance = GameManager::getInstance();
+	auto bulletVector = instance->bulletVector;
+
+	Sprite *sprite = (Sprite *)pSender;
+	instance->bulletVector.eraseObject(sprite);
+	sprite->removeFromParent();
+}
+
+Sprite* TowerBase::createBullet(std::string bulletTexName)
+{
+	Sprite* bullet = Sprite::createWithSpriteFrameName(bulletTexName);
+	addChild(bullet);
+	return bullet;
+}

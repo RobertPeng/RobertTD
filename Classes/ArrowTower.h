@@ -1,31 +1,32 @@
 /*******************************
-	AttackTower.h
+	ArrowTower.h
 
-	Robert		2014/09/22
+	Robert		2014/09/23
 
 
 *******************************/
-#ifndef __ATTACKTOWER_H_
-#define __ATTACKTOWER_H_
+#ifndef __ARROWTOWER_H_
+#define __ARROWTOWER_H_
 
 #include "cocos2d.h"
 #include "TowerBase.h"
 USING_NS_CC;
 
-class AttackTower : public TowerBase
+class ArrowTower : public TowerBase
 {
 public:
-	AttackTower();
-	virtual ~AttackTower();
+	ArrowTower();
+	virtual ~ArrowTower();
 
 	virtual bool init();
-	CREATE_FUNC(AttackTower);
-	void shoot(float dt);
+	CREATE_FUNC(ArrowTower);
+	void rotateAndShoot(float dt);
+	void shoot();
 	//void removeBullet(Node* pSender);
 	virtual Sprite* createBullet(std::string bulletTexName);
 
 private:
-	Sprite* tower;
+	Sprite* rotateArrow;
 };
 
 #endif
