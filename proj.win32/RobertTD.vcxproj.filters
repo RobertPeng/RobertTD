@@ -36,12 +36,36 @@
     <ClCompile Include="..\Classes\LevelInfoScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="..\Classes\TowerBase.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClCompile Include="..\Classes\EnemyBase.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Thief.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="..\Classes\GameManager.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AttackTower.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ArrowTower.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MultiDirTower.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TowerPanelLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -74,12 +98,36 @@
     <ClInclude Include="..\Classes\LevelInfoScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="..\Classes\TowerBase.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClInclude Include="..\Classes\EnemyBase.h">
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Thief.h">
       <Filter>Classes</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="..\Classes\GameManager.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AttackTower.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ArrowTower.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MultiDirTower.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TowerPanelLayer.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

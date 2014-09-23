@@ -134,28 +134,55 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="..\Classes\EnemyBase.cpp" />
+=======
+    <ClCompile Include="..\Classes\ArrowTower.cpp" />
+    <ClCompile Include="..\Classes\AttackTower.cpp" />
+    <ClCompile Include="..\Classes\EnemyBase.cpp" />
+    <ClCompile Include="..\Classes\GameManager.cpp" />
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClCompile Include="..\Classes\LevelInfoScene.cpp" />
     <ClCompile Include="..\Classes\LevelLayer.cpp" />
     <ClCompile Include="..\Classes\LevelScene.cpp" />
     <ClCompile Include="..\Classes\LevelSelectPage.cpp" />
     <ClCompile Include="..\Classes\LoadingResScene.cpp" />
     <ClCompile Include="..\Classes\LogoScene.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="..\Classes\Thief.cpp" />
+=======
+    <ClCompile Include="..\Classes\MultiDirTower.cpp" />
+    <ClCompile Include="..\Classes\Thief.cpp" />
+    <ClCompile Include="..\Classes\TowerBase.cpp" />
+    <ClCompile Include="..\Classes\TowerPanelLayer.cpp" />
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+<<<<<<< HEAD
     <ClInclude Include="..\Classes\EnemyBase.h" />
+=======
+    <ClInclude Include="..\Classes\ArrowTower.h" />
+    <ClInclude Include="..\Classes\AttackTower.h" />
+    <ClInclude Include="..\Classes\EnemyBase.h" />
+    <ClInclude Include="..\Classes\GameManager.h" />
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClInclude Include="..\Classes\LevelInfoScene.h" />
     <ClInclude Include="..\Classes\LevelLayer.h" />
     <ClInclude Include="..\Classes\LevelScene.h" />
     <ClInclude Include="..\Classes\LevelSelectPage.h" />
     <ClInclude Include="..\Classes\LoadingResScene.h" />
     <ClInclude Include="..\Classes\LogoScene.h" />
+    <ClInclude Include="..\Classes\MultiDirTower.h" />
     <ClInclude Include="..\Classes\RPlatform.h" />
     <ClInclude Include="..\Classes\RWinTypes.h" />
     <ClInclude Include="..\Classes\Thief.h" />
+<<<<<<< HEAD
+=======
+    <ClInclude Include="..\Classes\TowerBase.h" />
+    <ClInclude Include="..\Classes\TowerPanelLayer.h" />
+>>>>>>> 3a26e36edfe4a08ce73cd12cbce0fa4908eadcc9
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
