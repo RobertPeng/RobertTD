@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 set(APP_NAME MyGame)
 project (${APP_NAME})
 
+
 include(cocos2d/build/BuildHelpers.CMakeLists.txt)
 
 option(USE_CHIPMUNK "Use chipmunk for physics library" ON)
